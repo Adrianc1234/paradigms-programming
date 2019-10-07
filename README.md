@@ -1,7 +1,8 @@
-# ADA-programming
+# Object oriented programming
 
 ## Tic Tac Toe
 ### Principal class.
+In this part we can see how the functions on the code and of other objects are called in the main class to execute the game and use the properties for each of classes, for example the function "verificarGanador" and as you can see, we need to put the variable with that function is executed.
 ````Java
 package tateti;
 
