@@ -1,5 +1,9 @@
 # PPOT
-this game was made to learn more about object oriented programming by @pedrojimenezp
+## TEAM
+- Adrian Carmona
+- Saulo acevedo
+
+This game was made to learn more about object oriented programming by @pedrojimenezp
 Class that has the atributes and methods of one player, in this case it has the names and the points.
 ````Python
 class Jugador():
