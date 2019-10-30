@@ -38,7 +38,6 @@ class Persona {
 //metodo de lectura de todos los datos
   lecture () {
     var i;
-    var n = names.lenght
     for(i = 0; i < 3; i++) {
     console.log("Estos son los datos de " + names[i] + ": " )
     console.log("name: " + names[i])
@@ -89,7 +88,7 @@ class Persona {
     names[pos] = N_dname
     edad[pos] = N_dage
     IP[pos] = N_dip
-    console.log("LOS NUEVOS DATOS DE "+ N_dname+"SON: ")
+    console.log("LOS NUEVOS DATOS DE "+ N_dname+" SON: ")
     console.log("Nombre: " + names[pos])
     console.log("Edad: " + edad[pos])
     console.log("IP: " + IP[pos])
