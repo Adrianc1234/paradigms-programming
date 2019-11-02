@@ -3,7 +3,9 @@
 This is a project where we can see how a basic Data Base works in JavaScript. this Data Base has these functions: `Read`, `Edit`, `Delete`, `update`. It is a basic way to make a Data Base and is a good way to start with JavaScript and understand the functional programming and how java works.
 
 You can run this code here: [Compiler](https://playcode.io/466577?tabs=script_DataBase.js,preview,console).
+
 ## Code.
+
 ````JavaScript
 //EDITAR
 class Persona {
@@ -13,7 +15,7 @@ class Persona {
     this.ip = dir;
   }
 ````
-````
+````JavaScript
   // obtener datos de una persona
   get  datos ()   {
      return this.obtener_datos();
