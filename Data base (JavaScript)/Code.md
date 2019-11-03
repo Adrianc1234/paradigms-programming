@@ -40,13 +40,33 @@ _**(Example) It is not part for the code:**_
     return this.IP;
   }
 ````
-## Functions and their names for the `get name()`.
-
+## Methods and their names for the `get name()`.
+_**Names for `get()` :**_
 ````JavaScript
-  //obtener promedio de edades
+// get the average ages.
   get   promedio  ()   {
      return this.mean();
    }
+//read all data base.
+  get Datos () {
+    return this.lecture();
+  }
+// add a person.
+  get addition() {
+    return this.add();
+  }
+//edit one data.
+  get edit() {
+    return this.editing()
+  }
+//update the ages.
+  get update() {
+    return this.act();
+  }
+````
+_**Methods:**_
+1- This method called `mean()` is to make a mathematical operation to calculate the Average age and we use `for(i=0 ; i < 3; i++){instructions}` to get each value inside of the edad list and we make a sum for all values and we divide the sum over the lenght of the list.
+````JavaScript
   // Método
   mean () {
     var i;
@@ -57,10 +77,9 @@ _**(Example) It is not part for the code:**_
      }
      console.log("This is the mean of the Ages: "+ prome)
   }
-  //leemos todos los datos
-  get Datos () {
-    return this.lecture();
-  }
+````
+2-
+````JavaScript
 //metodo de lectura de todos los datos
   lecture () {
     var i;
@@ -71,11 +90,9 @@ _**(Example) It is not part for the code:**_
     console.log("IP:" + IP[i]+"\n")
     }
   }
-
-  // Eliminar
-  get   elimination  ()   {
-     return this.del(val);
-   }
+````
+3-
+````JavaScript
   // Método eliminar
   del (val) {
     var pos = names.indexOf(val);
@@ -86,10 +103,9 @@ _**(Example) It is not part for the code:**_
     IP.splice(pos,1)
     console.log("IP:" + IP)
   }
-  // este es para añadir a una persona
-  get addition() {
-    return this.add();
-  }
+ ````
+ 4-
+ ````JavaScript
   //funcion añadir
   add() {
     names.unshift(N_name);
@@ -100,13 +116,9 @@ _**(Example) It is not part for the code:**_
     console.log("Lista de IP: " + IP)
     console.log("Lista de edades: " + edad)
   }
-
-
-  //este es para editar un dato
-  get edit() {
-    return this.editing()
-  }
-
+ ````
+ 5-
+ ````JavaScript
   //metodo de edicion
   editing(){
     console.log("Esta es la persona que deseas editar: "+ N_dname)
@@ -119,11 +131,9 @@ _**(Example) It is not part for the code:**_
     console.log("Edad: " + edad[pos])
     console.log("IP: " + IP[pos])
   }
-
-  //actualizar las edades
-  get update() {
-    return this.act();
-  }
+ ````
+ 6-
+ ````JavaScript
   //funcion para actualizar edades
   act() {
     var list = []
