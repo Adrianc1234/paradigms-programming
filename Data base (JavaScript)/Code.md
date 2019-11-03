@@ -11,40 +11,38 @@ The assignments were `this.name = nombre`, `this.age = edad` and `this.ip = dir`
 ````JavaScript
 //EDITAR
 class Persona {
-  constructor (nombre, edad, dir) {
+  constructor (nombre, edad, IP) {
     this.name = nombre;
     this.age = edad;
-    this.ip = dir;
+    this.ip = IP;
   }
+}
 ````
-The way to write this code was on this way. As you can see for the first part we use `get name()` function to write the name that we will use when we call that property, also inside of _get()_ we need to write what it will do and we can call many functions that we already declared inside of the _get()_ and then we call it in this way: _**user.nameofmyget()**_; user is a variable that before you need to declare like `user = new persona(name,edad,ip)`
 ````JavaScript
-  // obtener datos de una persona
+//The lists:
+var names = ['Adrian', 'Liss','Hector'];
+var edad = [19,15,16];
+var IP = [124,123,125];
+````
+The way to write this code was on this way. As you can see for the first part we use `get name()` function to write the name that we will use when we call that property, also inside of _get()_ we need to write what it will do and we can call many functions that we already declared inside of the _get()_ and then we call it in this way: _**user.nameofmyget()**_; user is a variable that before you need to declare like `user = new persona(name,edad,IP)`
+_**(Example) It is not part for the code:**_
+````JavaScript
+  // get data for one person and only wrote to give a example.
+  // in this case if we write (user.datos) and suppose that we only have one data for each list.
+  // it will print all his data.
   get  datos ()   {
-     return this.obtener_datos();
+     return this.obtener_datos(); // the function that i want to return its result.
    }
   // Método nombre
-  obtener_datos () {
+  obtener_datos () { // my function for  the example
     return this.name;
     return this.edad;
-    return this.ip;
+    return this.IP;
   }
 ````
-
-
+## Functions and their names for the `get name()`.
 
 ````JavaScript
-  // obtener datos de una persona
-  get  datos ()   {
-     return this.obtener_datos();
-   }
-  // Método nombre
-  obtener_datos () {
-    return this.name;
-    return this.edad;
-    return this.ip;
-  }
-
   //obtener promedio de edades
   get   promedio  ()   {
      return this.mean();
@@ -139,15 +137,9 @@ The way to write this code was on this way. As you can see for the first part we
     console.log("Estos son las nuevas edades al pasar "+ years + " años: ")
     console.log(edad)
   } 
-}
-
-//listas
-var names = ['Adrian', 'Liss','Hector'];
-var edad = [19,15,16];
-var IP = [124,123,125];
-//parametros para user.
-const user = new Persona (names, edad, IP );
-
+````
+## Calls
+````
 //ver el promedio
 console.log("mean:" + user.promedio +"\n")
 
