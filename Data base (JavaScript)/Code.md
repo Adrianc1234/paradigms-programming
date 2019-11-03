@@ -78,7 +78,7 @@ _**Methods:**_
      console.log("This is the mean of the Ages: "+ prome)
   }
 ````
-2-
+2- This method is to read all data inside of the data base and for that we used the same method beacuse all data for each person are in the same position, then when the counter `i` change, we call the data in all lists in that position with this way: `name_list[i]`.
 ````JavaScript
 //metodo de lectura de todos los datos
   lecture () {
@@ -91,7 +91,7 @@ _**Methods:**_
     }
   }
 ````
-3-
+3-This method called `del()` uses the function `.splice()` but to use this function you need to know that it is written like _**namelist.splice(position, amount of values that you want delete)**_ .
 ````JavaScript
   // Método eliminar
   del (val) {
@@ -104,7 +104,7 @@ _**Methods:**_
     console.log("IP:" + IP)
   }
  ````
- 4-
+ 4- This method is to add some person and all about him or her, we use the function `.unshift()` to assign the value that we want to add, As we want to add all about that person, then we applythis function for each list with the variable inside of the function.
  ````JavaScript
   //funcion añadir
   add() {
@@ -117,7 +117,8 @@ _**Methods:**_
     console.log("Lista de edades: " + edad)
   }
  ````
- 5-
+ 5- This method is to edit some data of some person, we only get the name of the person that we need to edit and we use the `.indexOf()` to get the position on the list where the person is, then whe call all values for each list to check its values and change some using this way: 
+ _**name_lis[position]=new_value**_
  ````JavaScript
   //metodo de edicion
   editing(){
@@ -132,7 +133,7 @@ _**Methods:**_
     console.log("IP: " + IP[pos])
   }
  ````
- 6-
+ 6-This Method is only to add years for the Ages, it uses a `for` As in previous and we make a sum for each Age and we add the result inside of a empty list called `var list = []` and we match this list with the precious list and we use `.reverse()` function to put in order the data.
  ````JavaScript
   //funcion para actualizar edades
   act() {
@@ -149,7 +150,8 @@ _**Methods:**_
   } 
 ````
 ## Calls
-````
+These are the ways to call all functions using the names of the `get name()` that we assigned and declaring what variables it will use or what values:
+````JavaScript
 //ver el promedio
 console.log("mean:" + user.promedio +"\n")
 
