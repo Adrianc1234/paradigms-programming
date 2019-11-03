@@ -5,7 +5,9 @@ This is a project where we can see how a basic Data Base works in JavaScript. th
 _**You can run this code here:**_[_Compiler_](https://playcode.io/466577?tabs=script_DataBase.js,preview,console).
 
 ## Code.
+For the first part you can see that we declared a clas with the name `Persona`, after that we use the function `constructor` that it allows us to assign the values that we will use like properties for Persona class, in this case the properties and the values that we use are lists with the names: `nombre`,`edad` and `dir`. 
 
+The assignments were `this.name = nombre`, `this.age = edad` and `this.ip = dir`.
 ````JavaScript
 //EDITAR
 class Persona {
@@ -15,6 +17,22 @@ class Persona {
     this.ip = dir;
   }
 ````
+The way to write this code was on this way. As you can see for the first part we use `get name()` function to write the name that we will use when we call that property, also inside of _get()_ we need to write what it will do and we can call many functions that we already declared inside of the _get()_ and then we call it in this way: _**user.nameofmyget()**_; user is a variable that before you need to declare like `user = new persona(name,edad,ip)`
+````JavaScript
+  // obtener datos de una persona
+  get  datos ()   {
+     return this.obtener_datos();
+   }
+  // Método nombre
+  obtener_datos () {
+    return this.name;
+    return this.edad;
+    return this.ip;
+  }
+````
+
+
+
 ````JavaScript
   // obtener datos de una persona
   get  datos ()   {
