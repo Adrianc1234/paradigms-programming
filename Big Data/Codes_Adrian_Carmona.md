@@ -9,6 +9,7 @@
 <h3>How is it organized? or How does it storage?</h3>
 
 ![mongodb](https://lvemil.files.wordpress.com/2017/06/conceptos1.png?w=1000)
+
 <body>The first part is register one server in mongodb. We must understand that mongodb save only in documents, in that server we can create a lot of databases and inside of these we can create collections. Collection are like a stock that can save many documents. Like an advice i can say that the collections are the principal point to be completly organized because every collection should save documents for an especific topic. <body>
 
 <h3><center>Commands</center></h3>
@@ -26,6 +27,7 @@ use nombredb
 In this part we can insert things into a collection using `.insert()` or using `.save()` like : `db.comunidades.save({comunidad:'Madrid'})`, but you must remember that the collections are the most important thing because here is where you define the organization of your database. <br>
 Also we can use this command `db.createCollection('name')` if you want to go step by step because this command only mades an empty collection, but in this case i insert collections with documents.
 <body>
+	
 ````bash
 db.friends.insert(
     {
@@ -48,6 +50,7 @@ db.friends.insert(
 <h3>How can we see all the collections and documents?</h3>
 <body>
 We can see the collections and the documents or files inside of a database, but if you are so noob in this topic you only need to write `db.name.find()` and it will show you a list of things but is a so bad format for our eyes, so we can write `db.name.find().pretty()` and it will see better. <body>
+	
 ````bash
 db.friends.find().pretty()
 >>{
@@ -83,6 +86,7 @@ db.friends.find().pretty()
 <body>
 This is a simple funtion, but you must know that you need to define the most important variable or value that you want to choose like an index to make the sorting. the syntax is `db.nameofcollection.find().pretty().sort({"value": +1 or -1})` + or -1 is ascendig or descending.
 <body>
+	
 ````bash
 db.friends.find().pretty().sort({name:-1});
 >>{
@@ -223,6 +227,7 @@ db.friends.find().pretty().sort({name:-1});
 Aggregations operations process data records and return computed results. Aggregation operations group values from multiple documents together, and can perform a variety of operations on the grouped data to return a single result. In SQL count(*) and with group by is an equivalent of MongoDB aggregation.<br>
 We will made other collection with documents that have integers to make opperations. in this case we will make a sum of groups that have documents with the same id, we use `$group:{value to make groups}` and `$sum:{"values to sum"}`. 
 <body>
+	
 ````bash
 db.friends.insert({ _id: 1, cust_id: "4321", ord_date: ISODate("2012-11-02T17:04:11.102Z"), status: "a", amount: 50 },
 { _id: 2, cust_id: "1234", ord_date: ISODate("2013-10-01T17:04:11.102Z"), status: "a", amount: 480 },
