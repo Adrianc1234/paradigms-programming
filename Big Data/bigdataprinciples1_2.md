@@ -1,6 +1,8 @@
 <center><h1>Big Data</h1></center>
 <center>Adrian Roberto Carmona Rodriguez</center>
-![big-data-definition.jpeg](/home/adrian/Descargas/big-data-definition.jpeg)
+
+![big-data-definition.jpeg](https://live.mrf.io/statics/i/ps/www.muylinux.com/wp-content/uploads/2019/06/bigdata.jpg?width=1200&enable=upscale)
+
 <h2>Chapter 1 Paradigm for Big Data</h2>
 <h3>Table of Questions</h3>
 
@@ -8,7 +10,7 @@
 --------|-------------------
 What does The Lambda Architecture provide? | provides a general-purpose approach to implementing an arbitrary function on an arbitrary dataset and having the function return its results with low latency.
 What happen if you build immutability and recomputation into the core of a Big Data system?| the system will be innately resilient to human error by providing a clear and simple mechanism for recovery.
-What is scalability? | Scalability is the ability to maintain performance in the face of increasing data or load by adding resources to the system.<br>  **Note: **The Lambda Architecture is horizontally scalable across all layers of the system stack: scaling is accomplished by adding more machines.
+What is scalability? | Scalability is the ability to maintain performance in the face of increasing data or load by adding resources to the system.<br>  **Note:** The Lambda Architecture is horizontally scalable across all layers of the system stack: scaling is accomplished by adding more machines.
 What is generalization? | That means that your General system can give supports for many applications without problems.
 What do you need to check in a maintenance? | This process includes anticipating when to add machines to scale, keeping processes up and running, and debugging anything that goes wrong in production. An important part of this process is choosing components that have as little implementation complexity as possible.
 What is debuggability? | This definition is so easy to understand, this means the easy access to data and also the easy manipulation and control of data in a server.
@@ -24,14 +26,15 @@ What are the two thing that a batch layer would be able to do? | Store an immuta
 ***
 <h2>Chapter 2 Batch layer</h2>
 <h3>Table of Questions</h3>
-**Questions**        |**Answers**
+
+**Questions**| **Answers**
 -------------------- | -------------------
 Why could you reconstruct all your serving and where? even if you lose it.| This is because the batch views served by the serving layer are produced via functions on the master dataset, and since the speed layer is based only on recent data, it can construct itself within a few hours.
 What is a stock market trading? | Stock market trading is a fountain of information, with millions of shares and billions of dollars changing hands on a daily basis.
 Why unstructured data is rawer than normalized data? |We argue that it’s better to store the unstructured string, because your semantic normalization algorithm may improve over time. If you store the unstructured string, you can renormalize that data at a later time when you have improved your algorithms.
 What is Semantic normalization?|Semantic normalization is the process of reshaping free form information into a structured form of data.
 When store in an Unstructured data? | As a rule of thumb, if your algorithm for extracting the data is simple and accurate, like extracting an age from an HTML page, you should store the results of that algorithm. If the algorithm is subject to change, due to improvements or broadening the requirements, store the unstructured form of the data.
-What are the three components in a core of graph schema? | Nodes are the entities in the system - Edges are relationships between nodes. - Properties are information about entities. **Note: ** Edges are strictly between nodes.
+What are the three components in a core of graph schema? | Nodes are the entities in the system - Edges are relationships between nodes. - Properties are information about entities. **Note:** Edges are strictly between nodes.
 What do you do in a fact-based model? | In the fact-based model, you deconstruct the data into fundamental units called (unsurprisingly) facts.
 Why the facts are atomic? | Facts are atomic because they can’t be subdivided further into meaningful components.
 What are the two ways more secure to delete data?| Garbage collection and regulations.
