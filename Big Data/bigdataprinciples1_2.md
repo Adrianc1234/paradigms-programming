@@ -16,7 +16,7 @@ What do you need to check in a maintenance? | This process includes anticipating
 What is debuggability? | This definition is so easy to understand, this means the easy access to data and also the easy manipulation and control of data in a server.
 What is compaction? | Creates a new file to which the active information is written. Meanwhile, the existing database files stay in place and continue to be used for storing information and updating the index data.
 What do you need to make a compaction correctly? | You have to schedule compactions on each node so that not too many nodes are affected at once.other thing that You have to make sure is check if you have enough disk capacity on your nodes to last them between compactions. the final thing an is one of the most important is that you have to make sure you have enough capacity on your cluster.
-What is lambda architecture?| The main idea of the Lambda Architecture is to build Big Data systems as a series of layers, as shown in figure 1.6. Each layer satisfies a subset of the Speed layer properties and builds upon the functionality provided by the layers beneath it.
+What is lambda architecture?| The lambda architecture combines the two best forms of data processing, so the combination of batch and stream is sought by providing better processing and access to data.
 What is a batch layer? | The batch layer stores the master copy of the dataset and precomputes batch views on that master dataset.
 What are the two thing that a batch layer would be able to do? | Store an immutable, constantly growing master dataset, and compute arbitrary functions on that dataset.
 
@@ -36,6 +36,6 @@ What is Semantic normalization?|Semantic normalization is the process of reshapi
 When store in an Unstructured data? | As a rule of thumb, if your algorithm for extracting the data is simple and accurate, like extracting an age from an HTML page, you should store the results of that algorithm. If the algorithm is subject to change, due to improvements or broadening the requirements, store the unstructured form of the data.
 What are the three components in a core of graph schema? | Nodes are the entities in the system - Edges are relationships between nodes. - Properties are information about entities. **Note:** Edges are strictly between nodes.
 What do you do in a fact-based model? | In the fact-based model, you deconstruct the data into fundamental units called (unsurprisingly) facts.
-Why the facts are atomic? | Facts are atomic because they can’t be subdivided further into meaningful components.
+Why the facts are atomic? | Facts are atomic because they can not be divided further into meaningful components.
 What are the two ways more secure to delete data?| Garbage collection and regulations.
 What is the two principals advantages with immutable data? | Human-fault tolerance: is when you put a limit for people that work with your data and  then you can reduce the impact if he made a mistake. the second point is Simplicity: how you know it has and index, then the posibilities to modify and have access to the data are so simple, even you can make appends in an easy way. 
