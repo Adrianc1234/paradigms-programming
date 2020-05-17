@@ -30,7 +30,7 @@ What are the two thing that a batch layer would be able to do? | Store an immuta
 **Questions**| **Answers**
 -------------------- | -------------------
 Why could you reconstruct all your serving and where? even if you lose it.| This is because the batch views served by the serving layer are produced via functions on the master dataset, and since the speed layer is based only on recent data, it can construct itself within a few hours.
-What is a stock market trading? | Stock market trading is a fountain of information, with millions of shares and billions of dollars changing hands on a daily basis.
+What is a stock market trading? | Stock market trading is a fountain of information, with millions of shares and billions of dollars that being exchanged.
 Why unstructured data is rawer than normalized data? |We argue that it’s better to store the unstructured string, because your semantic normalization algorithm may improve over time. If you store the unstructured string, you can renormalize that data at a later time when you have improved your algorithms.
 What is Semantic normalization?|Semantic normalization is the process of reshaping free form information into a structured form of data.
 When store in an Unstructured data? | As a rule of thumb, if your algorithm for extracting the data is simple and accurate, like extracting an age from an HTML page, you should store the results of that algorithm. If the algorithm is subject to change, due to improvements or broadening the requirements, store the unstructured form of the data.
