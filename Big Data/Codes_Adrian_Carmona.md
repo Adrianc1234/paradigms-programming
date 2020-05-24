@@ -1,21 +1,19 @@
 ![mongo.png](https://miro.medium.com/max/1400/1*JvxScywQ5-PcFbr6s9gn2Q.png)
 <center><h1>Codes for Mongodb</h1></center>
-***
 <h2>What is mongodb and how does it work?</h2>
-<body> **Mongodb** storages a lot of data inside of documents that are so light for example .json, by that reason the shields can changes between files and the data structure can be change over time.<br>
+
+**Mongodb** storages a lot of data inside of documents that are so light for example .json, by that reason the shields can changes between files and the data structure can be change over time.<br>
 **Mongodb** is a distributed database in its core, so high availability, horizontal scalability and geographical distribution are integrated and easy to use.
-<body>
 
 <h3>How is it organized? or How does it storage?</h3>
 
 ![mongodb](https://lvemil.files.wordpress.com/2017/06/conceptos1.png?w=1000)
 
-<body>The first part is register one server in mongodb. We must understand that mongodb save only in documents, in that server we can create a lot of databases and inside of these we can create collections. Collection are like a stock that can save many documents. Like an advice i can say that the collections are the principal point to be completly organized because every collection should save documents for an especific topic. <body>
+The first part is register one server in mongodb. We must understand that mongodb save only in documents, in that server we can create a lot of databases and inside of these we can create collections. Collection are like a stock that can save many documents. Like an advice i can say that the collections are the principal point to be completly organized because every collection should save documents for an especific topic. 
 
 <h3><center>Commands</center></h3>
 <h3>Create a data base</h3>
-<body>
-The most normal is that we thought that to create a database in Mongodb there would be a method of the `createDB` style or `createDataBase` or something like that. Mongodb does not allow to create a database by commands, but creates it at the very moment in which we insert an element into a collection.<body>
+The most normal is that we thought that to create a database in Mongodb there would be a method of the `createDB` style or `createDataBase` or something like that. Mongodb does not allow to create a database by commands, but creates it at the very moment in which we insert an element into a collection.
 ````bash
 use nombredb
 (example: use test)
@@ -23,10 +21,9 @@ use nombredb
 **Note:** after that we have a db we can made collections where we will save documents.
 
 <h3>Insert a collection</h3>
-<body>
+
 In this part we can insert things into a collection using `.insert()` or using `.save()` like : `db.comunidades.save({comunidad:'Madrid'})`, but you must remember that the collections are the most important thing because here is where you define the organization of your database. <br>
 Also we can use this command `db.createCollection('name')` if you want to go step by step because this command only mades an empty collection, but in this case i insert collections with documents.
-<body>
 	
 ````bash
 db.friends.insert(
@@ -48,8 +45,8 @@ db.friends.insert(
 **Note:** I did many insertions with the same syntax.
 
 <h3>How can we see all the collections and documents?</h3>
-<body>
-We can see the collections and the documents or files inside of a database, but if you are so noob in this topic you only need to write `db.name.find()` and it will show you a list of things but is a so bad format for our eyes, so we can write `db.name.find().pretty()` and it will see better. <body>
+
+We can see the collections and the documents or files inside of a database, but if you are so noob in this topic you only need to write `db.name.find()` and it will show you a list of things but is a so bad format for our eyes, so we can write `db.name.find().pretty()` and it will see better. 
 	
 ````bash
 db.friends.find().pretty()
@@ -83,9 +80,9 @@ db.friends.find().pretty()
 **Note:** that was only an example of how it would see.
 
 <h3>How can we sort our output when we have many documents?</h3>
-<body>
+
 This is a simple funtion, but you must know that you need to define the most important variable or value that you want to choose like an index to make the sorting. the syntax is `db.nameofcollection.find().pretty().sort({"value": +1 or -1})` + or -1 is ascendig or descending.
-<body>
+
 	
 ````bash
 db.friends.find().pretty().sort({name:-1});
@@ -223,10 +220,10 @@ db.friends.find().pretty().sort({name:-1});
 ````
 
 <h3>How can we make opperations with the data?</h3>
-<body>
+
 Aggregations operations process data records and return computed results. Aggregation operations group values from multiple documents together, and can perform a variety of operations on the grouped data to return a single result. In SQL count(*) and with group by is an equivalent of MongoDB aggregation.<br>
 We will made other collection with documents that have integers to make opperations. in this case we will make a sum of groups that have documents with the same id, we use `$group:{value to make groups}` and `$sum:{"values to sum"}`. 
-<body>
+
 	
 ````bash
 db.friends.insert({ _id: 1, cust_id: "4321", ord_date: ISODate("2012-11-02T17:04:11.102Z"), status: "a", amount: 50 },
@@ -247,9 +244,7 @@ db.friends.aggregate([
 { "_id" : "1234", "total sum" : 120 }
 ````
 <h3>Delete a collection</h3>
-<body>
 This is the code to delete something that is not so necesary in the collections.
-<body>
 	
 ````bash
 db.empleados.remove({"cedula" : "123456"}); // this  is to delete one document.
@@ -257,9 +252,10 @@ db.empleados.drop(); // this is to delete a collection
 ````
 
 <h3><center> Mongo db in python</center></h3>
-<body>
 
-<body>
+Now we are going to change the enviroment cuz you must know that in python we can use mongodb too, but it has a complex systaxis.<br>
+in this part we will star what things does it work with? It can work with `.json` or with `array`, but in the json the order is not important, on the other hand when you work with arrays, the order is important. 
+
 
 
 
