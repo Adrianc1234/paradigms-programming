@@ -251,10 +251,35 @@ db.empleados.remove({"cedula" : "123456"}); // this  is to delete one document.
 db.empleados.drop(); // this is to delete a collection
 ````
 
-<h3><center> Mongo db in python</center></h3>
+<h2><center> Mongo db in python</center></h2>
 
 Now we are going to change the enviroment cuz you must know that in python we can use mongodb too, but it has a complex systaxis.<br>
 in this part we will star what things does it work with? It can work with `.json` or with `array`, but in the json the order is not important, on the other hand when you work with arrays, the order is important. 
+
+````Python
+// this is a dictionary 
+{
+'id': 12345,
+'name': 'Donny Winston',
+'instructor': true
+}
+
+// this is an array
+Array = ['id','name','instructor']
+```` 
+<h3>Making a local server</h3>
+
+In this part we need to start a local host using MongoClient and with this code where clientaaeeeas
+
+````Python
+import request
+from pymongo import MongoClient
+# Client connects to "localhost" by default
+client = MongoClient()
+# Create local "nobel" database on the fly
+db = client["nobel"]
+````
+
 
 
 
