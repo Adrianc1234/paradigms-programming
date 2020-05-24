@@ -246,7 +246,20 @@ db.friends.aggregate([
 { "_id" : "4321", "total sum" : 350 }
 { "_id" : "1234", "total sum" : 120 }
 ````
+<h3>Delete a collection</h3>
+<body>
+This is the code to delete something that is not so necesary in the collections.
+<body>
+	
+````bash
+db.empleados.remove({"cedula" : "123456"}); // this  is to delete one document.
+db.empleados.drop(); // this is to delete a collection
+````
 
+<h3><center> Mongo db in python</center></h3>
+<body>
+
+<body>
 
 
 
