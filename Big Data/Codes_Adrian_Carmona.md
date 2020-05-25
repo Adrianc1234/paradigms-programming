@@ -308,7 +308,7 @@ db.collection.count_documents({'gender': 'female'})
 
 In this case we will see that if we know some parameter where there are many documents, we could apply some filter to make a deep searching using these operators: `$in` in the list`$ne` not equal `$gt` grater than `$gte` the same but or equl`$lt` the against of grater than `lte` the same that gte only that less, for example: 
 
-````Python
+````Python3
 # in this case we are inside of a collection of documents and we want to count how many people died in Framce or USA.
 db.laureates.count_documents({
 'diedCountry': {
