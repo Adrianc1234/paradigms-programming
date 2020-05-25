@@ -14,17 +14,30 @@ Open this file to make changes
 ````Bash
 $ sudo nano /etc/redis/redis.conf
 ````
-now we must found the part where we see supervised inside of the file, this part, allow us declare a syste, init to manage Redis
+Now we must found the part where we see supervised inside of the file, this part, allow us declare a system, init to manage Redis
 like a server, which give us a control over its functions. by default the value the supervised value is 'no', then as we are in ubuntu,
 we will change this for systemd.
+````txt
+. . .
 
-````Bash
+# If you run Redis from upstart or systemd, Redis can interact with your
+# supervision tree. Options:
+#   supervised no      - no supervision interaction
+#   supervised upstart - signal upstart by putting Redis into SIGSTOP mode
+#   supervised systemd - signal systemd by writing READY=1 to $NOTIFY_SOCKET
+#   supervised auto    - detect upstart or systemd method based on
+#                        UPSTART_JOB or NOTIFY_SOCKET environment variables
+# Note: these supervision methods only signal "process is ready."
+#       They do not enable continuous liveness pings back to your supervisor.
 supervised systemd
-//lets go to restard the service
+. . .
+````
+lets go to restard the service and then chek if it works.
+````Bash
+#supervised systemd
 $ sudo systemctl restart redis.service
 
-//then we will see if it works
-Comprobar el servicio
+#check the service
 $ sudo systemctl status redis
 ````
 This would be the output:
@@ -48,3 +61,7 @@ may 24 11:46:42 adrian-HP-Laptop-15-da0xxx systemd[1]: Starting Advanced key-va>
 may 24 11:46:45 adrian-HP-Laptop-15-da0xxx systemd[1]: redis-server.service: Ca>
 may 24 11:46:46 adrian-HP-Laptop-15-da0xxx systemd[1]: Started Advanced key-val>
 ````
+Then we can start using it.
+
+<h2>Commands for Redis</h2>
+
