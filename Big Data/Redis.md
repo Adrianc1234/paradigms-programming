@@ -5,6 +5,7 @@
 <h2>How can we install it in ubuntu? <h3>
 
 Install Redis-server
+
 ````Bash
 $ sudo apt install redis-server
 ````
@@ -27,6 +28,7 @@ Comprobar el servicio
 $ sudo systemctl status redis
 ````
 This would be the output:
+
 **Note:** we can see that it says running
 
 ````Bash
