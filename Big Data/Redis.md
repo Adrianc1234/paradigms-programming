@@ -66,6 +66,7 @@ may 24 11:46:46 adrian-HP-Laptop-15-da0xxx systemd[1]: Started Advanced key-val>
 Then we can start using it.
 
 <h2>Commands for Redis</h2>
+
 ````bash
 #we write this code to execute the server.
 redis-cli
