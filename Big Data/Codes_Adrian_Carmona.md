@@ -267,17 +267,68 @@ in this part we will star what things does it work with? It can work with `.json
 // this is an array
 Array = ['id','name','instructor']
 ```` 
+
 <h3>Making a local server</h3>
 
-In this part we need to start a local host using MongoClient and with this code where clientaaeeeas
-
+In this part we need to start a local host using MongoClient and with this code where `db= client["name_of_the_database"]` with this we create a local host and inside of it we made a database, you can put the name that you want.
 ````Python
 import request
 from pymongo import MongoClient
-# Client connects to "localhost" by default
+# Client connects to "localhost"
 client = MongoClient()
-# Create local "nobel" database on the fly
-db = client["nobel"]
+# Create local database on the fly
+db = client["name"]
+````
+When we use this code we get a dictionary of the database as we already saw above.
+````Python
+#variable name_collection save the dictionary like a json.
+name_collection = db["prizes"]
+
+#we can save it too using .name_collection like, but in this case we only see one document because we do not
+#know how much big is it, but we can se the parameters.
+doc = db.prizes.find_one(filter)
+
+#also we can count the documents using:
+#filter is used to put many parameters or limits in you consult.
+n_prizes = db.prizes.count_documents(filter)
+
+````
+<h3>Finding documents</h3>
+
+In this language we can search documents and also we can make a count with this documents, in this part we will teach you how can we put filter in python to make searching and found your information.<br>
+If we put this line, imagine that you know your db and you know that one key is 'gender', but gender there are two or more, then you want only the people that is female, then we put`'gender': 'female'` like a key = female.` 
+
+````Python 
+#for example
+db.collection.count_documents({'gender': 'female'})
+>> 40 # for example that would be the number of female people.
+````
+
+<h3>Query operators</h3>
+
+In this case we will see that if we know some parameter where there are many documents, we could apply some filter to make a deep searching using these operators: `$in` in the list`$ne` not equal `$gt` grater than `$gte` the same but or equl`$lt` the against of grater than `lte` the same that gte only that less, for example: 
+
+````Python
+# in this case we are inside of a collection of documents and we want to count how many people died in Framce or USA.
+db.laureates.count_documents({
+'diedCountry': {
+'$in': ['France', 'USA']}}
+
+#using $ne
+db.laureates.count_documents({
+'diedCountry': {
+'$ne': 'France'}})
+
+#using $gt
+db.laureates.count_documents({
+'diedCountry': {
+'$gt': 'Belgium'}})
+
+#using $lt
+db.laureates.count_documents({
+'diedCountry': {
+'$lt': 'Belgium'}})
+
 ````
 
 
