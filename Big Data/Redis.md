@@ -109,6 +109,7 @@ As we know we can use Redis in python and the unique thing that we need to do is
 <br>
 we can add a set of documents like a dictionary using this syntaxis.
 for example:
+
 ````Python
 import redis
 
@@ -116,8 +117,74 @@ r = redis.StrictRedis(host='myserver', port=6379, db=0)
 r.hmset('my_key', {'field0': 'value0', 'field1':'value1', 'field2':'value2'}
 ````
 
+<h3>Adding elements to a list<h3>
+ 
+ We can add elements using the local host and the database, using `.lpush`
+ that is for add elements to a list using the name and the element.
+ 
+ ````Python
+     import redis
 
+r = redis.StrictRedis(host='localhost', port=6379, db=0)
 
+r.lpush('myqueue','myelement') 
+ ````
+<h3>Making a transactions<h3>
+
+What is a transactions in redis is so simple, the unique problem is that if you want to modify the values cuz you must use
+`amount` or `-amount` and you must to specify the value. For example:
+
+````Python
+# defaults to transaction=True 
+tx = r.pipeline()
+tx.hincrbyfloat(debit_account_key, 'balance', -amount)
+tx.hincrbyfloat(credit_account_key, 'balance', amount)
+tx.execute()
+````
+````Bash
+#other example
+redis>  SET mykey 10.50
+"OK"
+redis>  INCRBYFLOAT mykey 0.1
+"10.6"
+redis>  INCRBYFLOAT mykey -5
+"5.6"
+redis>  SET mykey 5.0e3
+"OK"
+redis>  INCRBYFLOAT mykey 2.0e2
+"5200"
+redis>  
+````
+
+<h3>Working with order set<h3>
+     
+````Python
+#Zadd to add a new set
+zadd favs 1 apple 2 pizza 3 chocolate 4 beer
+
+# zcard to count the values
+zcard favs
+>> 4
+
+#to search by range
+zcount favs 2 5
+>> 3
+````
+
+<h3>Using geo<h3>
+
+Using geoadd function the user can add geographic information.
+
+````Python
+#geoadd
+GEOADD meetup_cities -122.43 37.77 "San Francisco"
+````
+
+The GEODIST command allows a user to determine the distance between two members within a geospatial index by specifying the units. 
+
+````Python
+GEODIST meetup_cities "San Francisco" "Denver" mi
+````
 
 
 
