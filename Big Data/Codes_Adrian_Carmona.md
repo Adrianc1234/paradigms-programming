@@ -331,6 +331,26 @@ db.laureates.count_documents({
 
 ````
 
+<h3>Query operators</h3>
+
+I this part you can do searchings where you only count if something is inside of your documents.
+using `$exists: True or False`.
+
+````Python
+db.laureates.count_documents({"bornCountry": {"$exists": False}})
+````
+
+<h3>Searching the unique values</h3>
+I am so sure that you are wondering how can you search the unique values in a parameter or in your database.
+for this section we will use the function `.distinct()`. for example:
+
+````Python3
+#if we write this code, we will searcho the unique values in gender key.
+db.laureates.distinct("gender")
+# we would get for example:
+>> ['male', 'female', 'org']
+````
+
 
 
 
