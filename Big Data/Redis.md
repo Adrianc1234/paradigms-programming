@@ -2,7 +2,7 @@
 
 ![Redis](https://wikihosting.es/wp-content/uploads/2019/11/Redis-980x551.png)
 
-<h2>How can we install it in ubuntu? <h3>
+<h2>How can we install it in ubuntu? <h/2>
 
 Install Redis-server
 
