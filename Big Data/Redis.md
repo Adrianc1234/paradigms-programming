@@ -117,7 +117,7 @@ r = redis.StrictRedis(host='myserver', port=6379, db=0)
 r.hmset('my_key', {'field0': 'value0', 'field1':'value1', 'field2':'value2'}
 ````
 
-<h3>Adding elements to a list<h3>
+<h3>Adding elements to a list</h3>
  
  We can add elements using the local host and the database, using `.lpush`
  that is for add elements to a list using the name and the element.
@@ -129,7 +129,7 @@ r = redis.StrictRedis(host='localhost', port=6379, db=0)
 
 r.lpush('myqueue','myelement') 
  ````
-<h3>Making a transactions<h3>
+<h3>Making a transactions</h3>
 
 What is a transactions in redis is so simple, the unique problem is that if you want to modify the values cuz you must use
 `amount` or `-amount` and you must to specify the value. For example:
@@ -156,7 +156,7 @@ redis>  INCRBYFLOAT mykey 2.0e2
 redis>  
 ````
 
-<h3>Working with order set<h3>
+<h3>Working with order set</h3>
      
 ````Python
 #Zadd to add a new set
@@ -171,7 +171,7 @@ zcount favs 2 5
 >> 3
 ````
 
-<h3>Using geo<h3>
+<h3>Using geo</h3>
 
 Using geoadd function the user can add geographic information.
 
