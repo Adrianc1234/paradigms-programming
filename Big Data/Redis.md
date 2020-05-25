@@ -66,4 +66,23 @@ may 24 11:46:46 adrian-HP-Laptop-15-da0xxx systemd[1]: Started Advanced key-val>
 Then we can start using it.
 
 <h2>Commands for Redis</h2>
+````bash
+#we write this code to execute the server.
+redis-cli
+# the otuput would be:
+127.0.0.1:6379> 
+````
+
+Lets make our first hello world, but like a set. we only need to write this comando:
+We use SET and GET to declare that is a set of strings and after that we 
+````bash
+127.0.0.1:6379> SET hkey "hello world"
+OK
+127.0.0.1:6379> Get hkey
+"hello world"
+127.0.0.1:6379> 
+
+````
+
+
 
