@@ -42,7 +42,7 @@ $ sudo systemctl status redis
 ````
 This would be the output:
 
-**Note:** we can see that it says running
+*Note:* we can see that it says running
 
 ````Bash
 redis-server.service - Advanced key-value store
