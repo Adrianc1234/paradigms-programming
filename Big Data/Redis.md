@@ -17,6 +17,7 @@ $ sudo nano /etc/redis/redis.conf
 Now we must found the part where we see supervised inside of the file, this part, allow us declare a system, init to manage Redis
 like a server, which give us a control over its functions. by default the value the supervised value is 'no', then as we are in ubuntu,
 we will change this for systemd.
+
 ````txt
 . . .
 
@@ -33,6 +34,7 @@ supervised systemd
 . . .
 ````
 lets go to restard the service and then chek if it works.
+
 ````Bash
 #supervised systemd
 $ sudo systemctl restart redis.service
