@@ -39,3 +39,29 @@ What do you do in a fact-based model? | In the fact-based model, you deconstruct
 Why the facts are atomic? | Facts are atomic because they can not be divided further into meaningful components.
 What are the two ways more secure to delete data?| Garbage collection and regulations.
 What is the two principals advantages with immutable data? | Human-fault tolerance: is when you put a limit for people that work with your data and  then you can reduce the impact if he made a mistake. the second point is Simplicity: how you know it has and index, then the posibilities to modify and have access to the data are so simple, even you can make appends in an easy way. 
+
+- - -
+
+<h2>Chapter 3 Data model for big data: illustration</h2>
+<h3>Table of Questions</h3>
+
+**Questions**| **Answers**
+--------|-------------------
+What is a serialization framework? |is the process of translating data structures or objects to a state that can be stored for example in a file or buffer also can be transmitted for example, through a network connection link and reconstructing it later.
+Say three serialization frameworks| Apache Thrift, Protocol Buffers and Avro.
+In which type of structure the time stamp for the information is maintained and may also contain debugging information, besides mentioning that it corresponds to the final structure of the data.| Pedigree and The final Data struct corresponds to a fact from the fact-based model. 
+Say the three most important rules to have a good evolving schema | Fields may be renamed, A field may be removed, but you must never reuse that field and Only optional fields can be added to existing structs. 
+One example of a limit of serialization framework: | They can’t check more specific things or human errors like, ages should not be negative or time marks should not be towards the future.
+
+
+- - -
+
+<h2>Chapter 4 Data model for big data: illustration</h2>
+<h3>Table of Questions</h3>
+
+**Questions**| **Answers**
+--------|-------------------
+What does Hadoop Distributed File System (HDFS) do?| HDFS stores the files by splitting them into blocks, a type of divide and conquer, thus minimizing the cost of searches.
+What type of architecture use HDFS? · HDFS uses a Master-Slave architecture where the master is the Namenode that manages the files and metadata. These metadata contain information about the file, blockages and their location in the Datanodes.
+What is a vertical partitioning?| Vertical partition consists of creating thousands of tables with thousands of columns and creating tables to put the remaining columns.
+What is the horizontal partition?|consists of putting different rows in different tables, being able to adapt each table to the needs and optimize the search, but consuming more space.
