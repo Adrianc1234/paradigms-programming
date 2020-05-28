@@ -62,6 +62,6 @@ One example of a limit of serialization framework: | They can’t check more spe
 **Questions**| **Answers**
 --------|-------------------
 What does Hadoop Distributed File System (HDFS) do?| HDFS stores the files by splitting them into blocks, a type of divide and conquer, thus minimizing the cost of searches.
-What type of architecture use HDFS? · HDFS uses a Master-Slave architecture where the master is the Namenode that manages the files and metadata. These metadata contain information about the file, blockages and their location in the Datanodes.
+What type of architecture use HDFS?| HDFS uses a Master-Slave architecture where the master is the Namenode that manages the files and metadata. These metadata contain information about the file, blockages and their location in the Datanodes.
 What is a vertical partitioning?| Vertical partition consists of creating thousands of tables with thousands of columns and creating tables to put the remaining columns.
 What is the horizontal partition?|consists of putting different rows in different tables, being able to adapt each table to the needs and optimize the search, but consuming more space.
