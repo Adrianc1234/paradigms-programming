@@ -56,7 +56,7 @@ One example of a limit of serialization framework: | They can’t check more spe
 
 - - -
 
-<h2>Chapter 4 Data model for big data: illustration</h2>
+<h2>Chapter 4 Data storage on the batch layer</h2>
 <h3>Table of Questions</h3>
 
 **Questions**| **Answers**
