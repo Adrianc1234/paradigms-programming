@@ -3,6 +3,7 @@
 ---
 
 <h2>Graphical Databases</h2>
+
 Graphical databases serve to establish relationships, which are run later when in use. The way these are organized is the gradi of value of the data, so the relationships are classified as first-class citizens in the databases, and the rest derive with more relationships with different values.  These databases use nodes to save information of each data and borders to store the relationships, which having this relationship has a start node and end node, It should also be mentioned that there is no limit to the number of relationships a node can have.<br>
 <br>
 
@@ -13,6 +14,7 @@ They have advantages over usage cases such as social media, recommendation engin
 ![Why is important the graph database?(Benny Ogidan,Oct 30, 2018)](https://medium.com/the-andela-way/graph-databases-why-are-they-important-c438e1a224ae)
 
 <h3>Use cases</h3>
+
 With quick graphics queries, you can detect if, for example, a prospective buyer is using the same email address and credit card as a known fraud case. Graphics databases can also help you easily detect relationship patterns like, for example, that several people have the same personal email address or that several people share the same IP address even if they live in different physical addresses.  Another use of this type of database is that of recommendations, in which basically the user nodes are seen and the higher values of the nodes that are linked to the main node are recommended, from there that for example spotify and facebook give you music recommendations or similar movies.
 <br>
 
@@ -33,6 +35,7 @@ OrientDB |	Another multi-model database, OrientDB supports the graph, document, 
 ---
 
 <h2>Ledger Databases<h2>
+  
   
 General ledgers are commonly seen as a huge book of records within a database, where they can be saved for example by recording a complete history of an organization’s economic or financial activity. for example, monitoring credit and debit history in banking transactions, verifying the data flow of an insurance claim or tracking the movement of an item in a supply chain network.
 
