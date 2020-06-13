@@ -78,7 +78,7 @@ Apache CouchDB |	A project of the Apache Software Foundation, CouchDB stores dat
 - Documents map to the objects in your code, so they are much more natural to work with.
 - Lightweight, language-independent, and human readable, JSON has become an established standard for data interchange and storage. 
 - An important difference between document databases is the expressivity of the query language and richness of indexing. 
-
+- Unlike monolithic, scale-up relational databases, document databases are distributed systems at their core. Documents are independent units which makes it easier to distribute them across multiple servers while preserving data locality. 
 
 
 
