@@ -63,7 +63,7 @@ The document database is a non-relational database that has been designed to sto
 
 ![Structure for Document database](https://image.slidesharecdn.com/9-150511210602-lva1-app6892/95/9-document-oriented-databases-11-638.jpg?cb=1433608862)
 
-![Slides for more information](https://www.slideshare.net/fabiofumarola1/9-document-oriented-databases)
+![Image information](https://www.slideshare.net/fabiofumarola1/9-document-oriented-databases)
 
 Database |	Description
 -- | --
@@ -72,6 +72,14 @@ Couchbase |	Originally known as Membase, a JSON-based, Memcached-compatible docu
 Apache CouchDB |	A project of the Apache Software Foundation, CouchDB stores data as JSON documents and uses JavaScript as its query language.
 
 ![More information](https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models#document-oriented-databases)
+
+### Adventage:
+
+- Documents map to the objects in your code, so they are much more natural to work with.
+- Lightweight, language-independent, and human readable, JSON has become an established standard for data interchange and storage. 
+- An important difference between document databases is the expressivity of the query language and richness of indexing. 
+
+
 
 
 
