@@ -50,6 +50,8 @@ You can apply encryption methods to improve the security of your database, so th
 
 ### Use cases:
 
+The most common use of this type of database are bitcoin applications and banking applications, in which it is sought to have a record of the transfers that are made within the same and is also sought to determine which users make them and certain information about them, therefore acquires the name of ledger.
+
 ![bitcoin apps](https://coinlist.me/wp-content/uploads/2018/03/Las-mejores-aplicaciones-bitcoin-2018-1024x627.png)
 
 
