@@ -34,8 +34,7 @@ OrientDB |	Another multi-model database, OrientDB supports the graph, document, 
 
 ---
 
-<h2>Ledger Databases<h2>
-  
+<h2>Ledger Databases</h2>
   
 General ledgers are commonly seen as a huge book of records within a database, where they can be saved for example by recording a complete history of an organization’s economic or financial activity. for example, monitoring credit and debit history in banking transactions, verifying the data flow of an insurance claim or tracking the movement of an item in a supply chain network.
 
