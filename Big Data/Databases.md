@@ -54,5 +54,7 @@ The most common use of this type of database are bitcoin applications and bankin
 
 ![bitcoin apps](https://coinlist.me/wp-content/uploads/2018/03/Las-mejores-aplicaciones-bitcoin-2018-1024x627.png)
 
+---
 
+<h2>Document database</h2>
 
