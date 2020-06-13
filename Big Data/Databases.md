@@ -11,6 +11,7 @@ Graphical databases serve to establish relationships, which are run later when i
 They have advantages over usage cases such as social media, recommendation engines and fraud detection, where you need to link data and quickly query it.
 
 ![Graph database](https://miro.medium.com/max/1000/1*3XqHO9_jmc_ENLXuLhWpgQ.png)
+
 ![Why is important the graph database?(Benny Ogidan,Oct 30, 2018)](https://medium.com/the-andela-way/graph-databases-why-are-they-important-c438e1a224ae)
 
 <h3>Use cases</h3>
@@ -61,6 +62,7 @@ The most common use of this type of database are bitcoin applications and bankin
 The document database is a non-relational database that has been designed to store and query data in JSON-type documents or other formats. On the other hand, document databases make it easier for developers to store and query data, as well as to adapt to the needs of applications. The document model works well with cases where user data is required to be stored, which can be stored as catalogues, user profiles and content management systems where you can display and say that each document is unique and evolves over time.
 
 ![Structure for Document database](https://image.slidesharecdn.com/9-150511210602-lva1-app6892/95/9-document-oriented-databases-11-638.jpg?cb=1433608862)
+
 ![Slides for more information](https://www.slideshare.net/fabiofumarola1/9-document-oriented-databases)
 
 
