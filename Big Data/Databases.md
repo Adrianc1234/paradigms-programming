@@ -47,3 +47,10 @@ You can apply encryption methods to improve the security of your database, so th
 ![Ledger database](https://image.slidesharecdn.com/dat378-mir-mon-d-fri-1000-dat3-f4a3d376-f592-4089-b388-cf5aec113bed-281602960-181211171732/95/new-launch-how-do-i-know-i-need-a-ledger-database-an-introduction-to-amazon-qldb-dat378-aws-reinvent-2018-14-638.jpg?cb=1544548685)
 
 ![Slides with more information and the picture](https://www.slideshare.net/AmazonWebServices/new-launch-how-do-i-know-i-need-a-ledger-database-an-introduction-to-amazon-qldb-dat378-aws-reinvent-2018)
+
+### Use cases:
+
+![bitcoin apps](https://coinlist.me/wp-content/uploads/2018/03/Las-mejores-aplicaciones-bitcoin-2018-1024x627.png)
+
+
+
