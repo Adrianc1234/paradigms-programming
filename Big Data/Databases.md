@@ -65,7 +65,13 @@ The document database is a non-relational database that has been designed to sto
 
 ![Slides for more information](https://www.slideshare.net/fabiofumarola1/9-document-oriented-databases)
 
+Database |	Description
+-- | --
+MongoDB |	A general purpose, distributed document store, MongoDB is the world’s most widely used document-oriented database at the time of this writing.
+Couchbase |	Originally known as Membase, a JSON-based, Memcached-compatible document-based data store. A multi-model database, Couchbase can also function as a key-value store.
+Apache CouchDB |	A project of the Apache Software Foundation, CouchDB stores data as JSON documents and uses JavaScript as its query language.
 
+![More information](https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models#document-oriented-databases)
 
 
 
