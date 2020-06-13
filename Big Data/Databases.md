@@ -38,6 +38,10 @@ OrientDB |	Another multi-model database, OrientDB supports the graph, document, 
   
 General ledgers are commonly seen as a huge book of records within a database, where they can be saved for example by recording a complete history of an organization’s economic or financial activity. for example, monitoring credit and debit history in banking transactions, verifying the data flow of an insurance claim or tracking the movement of an item in a supply chain network.
 
+A ledger database is immutable this means that you never change the data in the document or DB table, which is so important for the companies because with this way to organize access to the information, by that only their employments can edit. What we may think of as a change, updating a person’s address, for instance, becomes a new version of that record. So, no matter what changes happen you will never overwrite the existing data.
 
+You can apply encryption methods to improve the security of your database, so that the data is safeguarded and hidden by means of encryption in which only a base key can show the data that is in it.
+
+![More information](https://hackernoon.com/relational-nosql-ledger-databases-work-not-permissioned-blockchains-9ccaef7b3139)
 
 
