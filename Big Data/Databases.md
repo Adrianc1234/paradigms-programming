@@ -58,3 +58,15 @@ The most common use of this type of database are bitcoin applications and bankin
 
 <h2>Document database</h2>
 
+The document database is a non-relational database that has been designed to store and query data in JSON-type documents or other formats. On the other hand, document databases make it easier for developers to store and query data, as well as to adapt to the needs of applications. The document model works well with cases where user data is required to be stored, which can be stored as catalogues, user profiles and content management systems where you can display and say that each document is unique and evolves over time.
+
+![Structure for Document database](https://image.slidesharecdn.com/9-150511210602-lva1-app6892/95/9-document-oriented-databases-11-638.jpg?cb=1433608862)
+![Slides for more information](https://www.slideshare.net/fabiofumarola1/9-document-oriented-databases)
+
+
+
+
+
+
+
+
