@@ -84,9 +84,8 @@ Apache CouchDB |	A project of the Apache Software Foundation, CouchDB stores dat
 
 # Matrix of description
 
-|Titulo| description
---|--
-nombre| description
+|Type of database| Features | Best use | Usage example | Services| main focus |
+--|--|--|--|--|--|
 
 
 
