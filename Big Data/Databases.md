@@ -82,10 +82,8 @@ Apache CouchDB |	A project of the Apache Software Foundation, CouchDB stores dat
 
 ---
 
-# Matrix of description
+# Comparation matrix
 
-|Type of database| Features | Best use | Usage example | Services| main focus |
+|Type of database| Features | Best use | Usage example | Services|
 --|--|--|--|--|--|
-
-
-
+|Graph database|-Easy to use - Every data is saved with order- it has nodes - it has conection for each data - easy to cover - each data has its own features - each conection has different value - can see relations with other data - easy to edit.| A social network is a good example of a graph. The people in the network would be the nodes, the attributes of each person (such as name, age, etc.) would be properties and the lines that would connect people (with labels like "friend" or "mother" or "supervisor" would indicate their relationship.| finding connection patterns in chart data that would be difficult to detect through other data representations. Fraud detection systems use graphical databases to reveal relationships between entities that might otherwise have been difficult to detect. | Neo4j - Microsoft Azure Cosmos DB - JanusGraph.
