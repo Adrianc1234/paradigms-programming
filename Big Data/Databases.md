@@ -1,8 +1,8 @@
 ***TEAM:***
--Auria
--Isaac
--Ulises
--Adorian
+- Auria
+- Isaac
+- Ulises
+- Adorian
 
 ---
 
