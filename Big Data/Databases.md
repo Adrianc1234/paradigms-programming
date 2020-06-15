@@ -87,3 +87,9 @@ Apache CouchDB |	A project of the Apache Software Foundation, CouchDB stores dat
 |Type of database| Features | Best use | Usage example | Services|
 --|--|--|--|--|
 |Graph database|-Easy to use - Every data is saved with order- it has nodes - it has conection for each data - easy to cover - each data has its own features - each conection has different value - can see relations with other data - easy to edit.| A social network is a good example of a graph. The people in the network would be the nodes, the attributes of each person (such as name, age, etc.) would be properties and the lines that would connect people (with labels like "friend" or "mother" or "supervisor" would indicate their relationship.| finding connection patterns in chart data that would be difficult to detect through other data representations. Fraud detection systems use graphical databases to reveal relationships between entities that might otherwise have been difficult to detect. | Neo4j - Microsoft Azure Cosmos DB - JanusGraph.
+|Ledger Database|-It records the codes and accounts of the transactions of the users as catalogs- All the users have a folio number that identifies them - it keeps record of all the transactions carried out by each account- transactions can be made with the records in the database.| General ledgers are usually used to record a history of an organization’s economic and financial activity. |  Many organizations create applications with general ledger-like functionality because they want to maintain an accurate history of their application data, such as monitoring credit and debit history in banking transactions, verifying the data lineage of an insurance claim or tracking the movement of an item in a supply chain network| -Amazon QLBD.
+
+
+
+
+
