@@ -88,6 +88,9 @@ what is maintainability? | It is the way to organize a database adapted to the n
 --------|-------------------
 Why an index is an additional structure? | Basically it is because if you put or remove indices, these do not affect the data inside the database, the only thing that affect are the aesthetics and the organization of the same, since good is always easier to look for things if they are organized.
 How does hash indexes work? | The main operation that supports efficiently is the search, as it allows access to the stored elements from a key generated. It works by transforming the key with a hash function into a hash, a number that identifies the position where the hash table locates the desired value.
+What issues are important in a real implementation for hash? | 1- csv are not always the best way to save something, many times is better use binary and raw strings. 2- If you want to delete a key and its associated value, you have to append a special deletion record to the data file. 3- Bitcask speeds up recovery by storing a snapshot of each segment’s hash map on disk, which can be loaded into memory more quickly. 4-  Bitcask files include checksums, allowing such corrupted parts of the log to be detected and ignored. 5- Data file segments are appendonly and otherwise immutable, so they can be read concurrently by multiple threads.
+How does SSTable is organized? | codigos are basically created for each data packet and identified with the same code, these relationships are maintained by the type of data and by the code of each specific thing and using tags.
+How can it search something in SSTable? | It is searched through the relationships and the type of packaging label that is generated, which makes the search more direct without having to go through the check of all the others.
 
 
 
