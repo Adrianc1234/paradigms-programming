@@ -81,6 +81,18 @@ what is maintainability? | It is the way to organize a database adapted to the n
 
 ---
 
+The Object-Relational Mismatch
+<h2>The object- Relational Mismatch</h2>
+<h3>Table of Questions</h3>
+
+**Questions**| **Answers**
+--------|-------------------
+what is object-relational mismatch? | is a series of conceptual and technical problems that are often presented when working with relational database management systems from application servers developed in object-oriented languages. The problems mainly focus on the mapping of object or class definitions in tables of a database defined according to a relational scheme. 
+
+
+
+---
+
 <h2>Storage and retrieval Chapter 3</h2>
 <h3>Table of Questions</h3>
 
