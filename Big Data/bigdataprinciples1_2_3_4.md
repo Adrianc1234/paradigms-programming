@@ -104,5 +104,12 @@ What issues are important in a real implementation for hash? | 1- csv are not al
 How does SSTable is organized? | codigos are basically created for each data packet and identified with the same code, these relationships are maintained by the type of data and by the code of each specific thing and using tags.
 How can it search something in SSTable? | It is searched through the relationships and the type of packaging label that is generated, which makes the search more direct without having to go through the check of all the others.
 
+---
 
+<h2>Encoding and evolution Chapter 4</h2>
+<h3>Table of Questions</h3>
 
+**Questions**| **Answers**
+--------|-------------------
+How does programs usually work with data? |  THe first is in memory, that happend when the program saves the information in arrays, objects and others where the information can be saved and easy to access or manipulated by the CPU.
+What problems have the encodig library? | The encoding is often tied to a particular programming language, and reading the data in another language is very difficult. In order to restore data in the same object types, the decoding process needs to be able to instantiate arbitrary classes. as they are intended for quick and easy encoding of data, they often neglect the inconvenient problems of forward and backward compatibility. Efficiency (CPU time taken to encode or decode, and the size of the encoded structure) is also often an afterthought
