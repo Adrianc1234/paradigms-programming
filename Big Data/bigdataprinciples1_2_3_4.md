@@ -127,11 +127,8 @@ from Protocol Buffers and Thrift. It was started in 2009 as a subproject of Hado
 What is replication data? |  is the process of storing data in more than one site or node. It is useful in improving the availability of data. It is simply copying data from a database from one server to another server so that all the users can share the same data without any inconsistency. The result is a distributed database in which users can access data relevant to their tasks without interfering with the work of others. 
 why is necessary the replication data? | To keep data geographically close to your users, To allow the system to continue working even if some of its parts have failed, To scale out the number of machines that can serve read queries.
 what types of data replication are there? | Transactional Replication, Snapshot Replication and Merge Replication.
-What is called leader replicas to? | When clients want to write to the database, they must send their requests to the
-leader, which first writes the new data to its local storage.
-What do follower replicas do? | Each follower takes the log from the leader and updates its local copy of the data‐
-base accordingly, by applying all writes in the same order as they were processed
-on the leader.
+What is called leader replicas to? | When clients want to write to the database, they must send their requests to the leader, which first writes the new data to its local storage.
+What do follower replicas do? | Each follower takes the log from the leader and updates its local copy of the database accordingly, by applying all writes in the same order as they were processed on the leader.
 Advantages of no replication: | The data can be easily recovered. Concurrency can be achieved in no replication.
 Disavantages of no replication: |  Since multiple users are accessing the same server, it may slow down the execution of queries. The data is not easily available as there is no replication.
 Advantages of data replication: | To provide a consistent copy of data across all the database nodes. To increase the availability of data. The reliability of data is increased through data replication. Data Replication supports multiple users and gives high performance. To remove any data redundancy,the databases are merged and slave databases are updated with outdated or incomplete data. Since replicas are created there are chances that the data is found itself where the transaction is executing which reduces the data movement.To perform faster execution of queries.
