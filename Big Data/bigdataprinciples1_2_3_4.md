@@ -139,8 +139,5 @@ Advantages of data replication: | To provide a consistent copy of data across al
 **Questions**| **Answers**
 --------|-------------------
 Say 3 things that could be wrong in the harsh reality of data systems.| The database software or hardware may fail at any time. The application may crash at any time. Interruptions in the network can be unexpected.
-What is a transaction? | A transaction is a way for an application to group several reads and writes
-together into a logical unit. Conceptually, all the reads and writes in a transaction are
-executed as one operation: either the entire transaction succeeds (commit) or it fails
-(abort, rollback).
+What is a transaction? | A transaction is a way for an application to group several reads and writes together into a logical unit. Conceptually, all the reads and writes in a transaction are executed as one operation: either the entire transaction succeeds or it fails.
 
