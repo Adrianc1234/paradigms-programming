@@ -133,4 +133,14 @@ Advantages of no replication: | The data can be easily recovered. Concurrency ca
 Disavantages of no replication: |  Since multiple users are accessing the same server, it may slow down the execution of queries. The data is not easily available as there is no replication.
 Advantages of data replication: | To provide a consistent copy of data across all the database nodes. To increase the availability of data. The reliability of data is increased through data replication. Data Replication supports multiple users and gives high performance. To remove any data redundancy, the databases are merged and slave databases are updated with outdated or incomplete data. Since replicas are created there are chances that the data is found itself where the transaction is executing which reduces the data movement. To perform faster execution of queries.
 
+<h2>Transaction 6</h2>
+<h3>Table of Questions</h3>
+
+**Questions**| **Answers**
+--------|-------------------
+Say 3 things that could be wrong in the harsh reality of data systems.| The database software or hardware may fail at any time. The application may crash at any time. Interruptions in the network can be unexpected.
+What is a transaction? | A transaction is a way for an application to group several reads and writes
+together into a logical unit. Conceptually, all the reads and writes in a transaction are
+executed as one operation: either the entire transaction succeeds (commit) or it fails
+(abort, rollback).
 
