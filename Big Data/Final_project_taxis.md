@@ -14,8 +14,8 @@ Data-driven projects should start by defining the problem they want to solve and
 
 As a second point you will also know in which month the trips are longer and with that same give warning about the gasoline expenses in those months, in the same way that month taxis are more requested.
 
-### Our pipline for the project**
+### Our pipline for the project
 ![pipline](https://github.com/Adrianc1234/paradigms-programming/blob/master/Big%20Data/Pictures/pipline.png?raw=true)
 
-![Other pipline to understand better](https://github.com/Adrianc1234/paradigms-programming/blob/master/Big%20Data/Pictures/pipeline.pdf)
+[Simple pipline](https://github.com/Adrianc1234/paradigms-programming/blob/master/Big%20Data/Pictures/pipeline.pdf)
 
