@@ -7,4 +7,6 @@ In the other hand, for the visualization, we made a heatmap to show the most fre
 
 ## 1- Pipline
 How do we do the process? 
-![image][]
+
+![pipline](https://github.com/Adrianc1234/paradigms-programming/blob/master/Big%20Data/Pictures/pipline.png?raw=true)
+![Other pipline to understand better](https://github.com/Adrianc1234/paradigms-programming/blob/master/Big%20Data/Pictures/pipeline.pdf)
