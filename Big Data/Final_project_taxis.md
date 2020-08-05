@@ -177,7 +177,7 @@ It is necessary to present the data: talk to your audience so that they know the
 ![grafica2](https://github.com/Adrianc1234/paradigms-programming/blob/master/Big%20Data/Pictures/Graficas%202.png?raw=true)
 
 # How can i run it? 
-- 1- Download the files ![here](), (it is a zip, dont move nothing, just follow the instructions)
+- 1- Download the files [here](https://upy-my.sharepoint.com/:u:/g/personal/st1809032_upy_edu_mx/ETkECiTwvwtKinBqVVcWi5QBj_MTP_lAV1SCstfuCsb9pg?e=IIEHJG), (it is a zip, dont move nothing, just follow the instructions)
 - 2- unzip the file
 - 3- run the first file called elasticsearch.sh with the command **./elasticsearch.sh** (in linux or ubuntu, dont forget put allow like a program)
 - 4- open a new tap in the terminal and run the second script with **./programa.sh**(The same note like above)
