@@ -1,4 +1,10 @@
 # DATA ANALYSIS USING PYTHON AND ELASTICSEARCH
+## Team work
+- 1- Saulo acevedo: Encargado de la visualizacion de los histogramas y analisis de los mismos............tiempo estimado 3 dias (Ayudo tambien en el codigo)
+- 2- Adrian Carmona: Encargado de inspeccion del indexado y desarrollo del codigo para la visualizacion del mapa............tiempo estimado 3 dias (Aplico autimatizacion) 
+- 3- Isaac Chavez: Encargado de inspeccion del indexado y desarrollo del codigo para la visualizacion del mapa..............tiempo estimado 3 dias
+- 4- Auria Dzul: Encargada de obtencion, chequeo y limpieza de datos para el indexado..........tiempo estimado 3 dias
+- 5- Ulises pat: Encargado de obtencion, chequeo y limpieza de datos para el indexado..........tiempo estimado 3 dias
 
 ## Introduction
 This project was based in analize one data set in a faster way using elasticsearch to index all data. Why elasticsearch? **Elasticsearch** is a distributed, open source analytics and analytics engine for all types of data, including textual, numerical, geospatial, structured, and unstructured. And the data set that we used was about taxis trips, then we needed to make graphs using geopoints by that reasons we must put it in applying indexation with Elasticsearch.
